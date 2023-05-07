@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <script src="home.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="jquery-3.3.1.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+
+    </script>
+  <script type="text/javascript">
+
+    /*$(document).ready(function(){
+        $("#headbtnSelVehicles").click(function(){
+            $("#dvdropShopping").hide("slow");
+            $("#dvdropSelVehicles").slideToggle("slow");
+            
+     //});
+             $("#headbtnShopping").click(function(){
+                $("#dvdropSelVehicles").hide("slow");
+            $("#dvdropShopping").slideToggle("slow");
+        });*/
+    $(document).ready(function () {
+      //$("#img1").show(fast);
+      $("#headbtnSelVehicles").click(function () {
+        $("#dvdropShopping").hide("slow");
+        //$(".slideshow-container").hide("slow");
+
+        $("#dvdropSelVehicles").animate({
+
+          height: 'toggle'
+        });
+
+      });
+      $("#headbtnShopping").click(function () {
+        $("#dvdropSelVehicles").hide("slow");
+        //$(".slideshow-container").hide("slow");
+
+        $("#dvdropShopping").animate({
+
+          height: 'toggle'
+        });
+        // $(".slider-container").css("opacity", 0.1)
+
+      });
+
+      // //change bg color
+      $(".mySlides").mouseenter(function () {
+        $("#prev,#next").css("background-color", " #e6e6e6");
+        $("#prevArr,#nextArr").css("color", " red");
+      });
+      // change forecolor
+      /* $(".mySlides").mouseenter(function(){
+      $("#prevArr,#nextArr").css("color"," red");
+      });*/
+      //changing hover bg color
+      $("#prev,#next").mouseenter(function () {
+        $("#prev:hover,#next:hover").css("background-color", "red");
+      });
+
+
+      $(".mySlides").mouseleave(function () {
+        $("#prev,#next").css("background-color", "white");
+        $("#prevArr,#nextArr").css("color", " white");
+      });
+      //changing hover bg color
+      $("#prev,#next").mouseenter(function () {
+        $("#prevArr:hover,#nextArr:hover").css("color", " white");
+
+      });
+
+
+      $("#priusc1").show("slow");
+      $("#priusc2").hide("slow");
+      $("#priusc1").mouseover(function () {
+        $(this).hide("slow");
+        $("#priusc2").show("slow");
+      })
+      $("#priusc2").mouseleave(function () {
+        $("#priusc2").hide("slow");
+        $("#priusc1").show("slow");
+
+
+      })
+      $("#corollahb1").show("slow");
+      $("#corollahb2").hide("slow");
+      $("#corollahb1").mouseover(function () {
+        $(this).hide("slow");
+        $("#corollahb2").show("slow");
+      })
+      $("#corollahb2").mouseleave(function () {
+        $("#corollahb2").hide("slow");
+        $("#corollahb1").show("slow");
+
+      });
+      $("#prius1").show("slow");
+      $("#prius2").hide("slow");
+      $("#prius1").mouseover(function () {
+        $(this).hide("slow");
+        $("#prius2").show("slow");
+      });
+      $("#prius2").mouseleave(function () {
+        $("#prius2").hide("slow");
+        $("#prius1").show("slow");
+
+      });
+      $("#camry1").show("slow");
+      $("#camry2").hide("slow");
+      $("#camry1").mouseover(function () {
+        $(this).hide("slow");
+        $("#camry2").show("slow");
+      });
+      $("#camry2").mouseleave(function () {
+        $("#camry2").hide("slow");
+        $("#camry1").show("slow");
+
+      });
+
+
+      /* $("#priusc1")ss("background-color","transparent");.mouseover(function(){
+          $(this).("src","img/priusc2.png");*/
+
+
+
+      /*
+    
+    $(".ball1").css("background-color","transparent");
+    $(".ball11").css("background-color","transparent");
+    $(".dot1").css("background-color","transparent");
+    $(".ball12").click(function(){
+        $(this).css("background-color","transparent");
+        $(".ball12").css("background-color","white");
+        $(".ball1").css("background-color","BLUE");
+         });*/
+      /**/
+      /*$(".ball2").css("background-color","transparent");
+      $(".ball12").css("background-color","transparent");*/
+      /*$(".dot2").click(function(){
+        $(this).css("background-color","transparent");
+        $(".ball12").css("background-color","white");
+        $(".ball2").css("background-color","BLUE");
+         });
+    
+       $(".ball3").css("background-color","transparent");
+      $(".dot3").click(function(){
+        $(this).css("background-color","transparent");
+        $(".ball13").css("background-color","white");
+        $(".ball3").css("background-color","BLUE");
+         });});*/
+
+
+
+
+      /* 
+   $(document).ready(function(){
+     $(".mySlides1").show("slow");
+   
+     $("#dot2").click(function(){
+     $(".mySlides1").hide("slow");
+     $(".mySlides2").show("slow");
+     $(".mySlides3").hide("slow");
+     });	
+     $("#dot1").click(function(){
+     $(".mySlides1").show("slow");
+     $(".mySlides2").hide("slow");
+     $(".mySlides3").hide("slow");
+     });	
+     $("#dot3").click(function(){
+     $(".mySlides1").hide("slow");
+     $(".mySlides2").hide("slow");
+     $(".mySlides3").show("slow");
+     });	
+   
+     $(".next").click(function(){
+       $(".mySlides1").hide("slow");
+       $(".mySlides2").show("slow");
+       $(".mySlides3").hide("slow");
+     });
+     $(".next").click(function(){
+       $(".mySlides1").hide("slow");
+       $(".mySlides2").hide("slow");
+       $(".mySlides3").show("slow");
+     });
+   $(".prev").click(function(){
+       $(".mySlides1").hide("slow");
+       $(".mySlides2").hide("slow");
+       $(".mySlides3").show("slow");
+     });
+   	
+   });
+   
+   */
+    });
+  </script>
+</head>
+
+<body>
+  <div id="dvheader">
+    <div id="dvHeadAncors">
+      <div>
+        <a href="13.33">Search <i id="icoSearch" class="	fa fa-search"></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="border-left: 1px solid #ddd;"></span>
+      </div>
+      <div>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=""> Certified Used
+          Vehicles</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="border-left: 1px solid #ddd;"></span>
+      </div>
+      <div>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=""> Owners</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="border-left: 1px solid #ddd;"></span>
+      </div>
+      <div>
+
+        <span style="border-left: 1px solid #ddd;"></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=""> Español</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="border-left: 1px solid #ddd;"></span>
+      </div>
+      <div>
+        <span style="border-left: 1px solid #ddd;"></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=""> Set Location <i class="fa fa-pencil"></i></a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="header2">
+    <div>
+      <img class="logo" style="width: 200px; height: 50px;" src="img/logo.png">
+    </div>
+    <div class="header2-button-div">
+      <button id="headbtnSelVehicles" class="headbtn"><span class="label">
+          Vehicles </span>
+      </button>
+      <button id="headbtnShopping" class="headbtn"><span class="label" onclick="dropIco()">Shopping
+          Tools </span>
+        <!--<ul class="dropdownbtn"></ul>  -->
+      </button>
+      <button class="headbtn">Owners</button>
+      <button class="headbtn">Search Inventory</button>
+    </div>
+  </div>
+  <div id="dvdropSelVehicles">
+  <div style="margin: 0 auto; display: flex; flex-direction: column; text-align:center ; justify-content: center; background: #ddd; height: 100%;">
+    <h3>Some Content</h3>
+  </div>  
+  </div>
+  <div id="dvdropShopping">
+    <div style="margin: 0 auto; display: flex; flex-direction: column; text-align:center ; justify-content: center; background: #ddd; height: 100%;">
+      <h3>Some Content</h3>
+    </div>
+
+  </div>
+  <!-- Slideshow container -->
+  <!-- <div class="slideshow-container"> -->
+  <!-- Full-width images with number and caption text -->
+  <!--  <div class="mySlides1" id="fade"> <img style="height: 500px; width: 100%;"
+            src="img/corolla_car.png"> </div>        <div class="mySlides2" id="fade"> <img style="height: 500px; width: 100%;"
+            src="img/avalon_car.png"> </div>        <div class="mySlides3" id="fade"> <img style="height: 500px; width: 100%;"            src="img/tacoma_car.png"> </div>
+        Next and previous buttons         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>        <a class="next" onclick="plusSlides(1)">&#10095;</a>        <div style="text-align:center"> <span id="dot1" class="dot" onclick="currentSlide(1)"></span>
+          <span id="dot2" class="dot" onclick="currentSlide(2)"></span> <span id="dot3"            class="dot" onclick="currentSlide(3)"></span> </div>        </div> -->
+  <table style="width:100%;" border="0" class="slider-container">
+    <tbody>
+      <tr style="">
+        <td style="width:100%; height: 10px; id=" slider"="" class="w3-content w3-display-container">
+          <div style="    width: 50%;margin: 0 auto;">
+            <img id="img1" class="mySlides" src="img/avalon_car.png" style="width:100%;height: 400px">
+            <img id="img2" class="mySlides" src="img/corolla_car.png" style="width:100%;height: 400px">
+            <img id="img3" class="mySlides" src="img/tacoma_car.png" style="width:100%;height: 400px">
+          </div>
+          <!-- <div  class="w3-content w3-display-container" style="width:100%;"> -->
+
+          <div id="prev" class="prev w3-hover-text-khaki" onclick="plusDivs(-1)">
+            <div id="prevArr" style="color:;">&#10094;</div>
+          </div>
+          <div id="next" class="next w3-hover-text-khaki" onclick="plusDivs(1)">
+            <div id="nextArr" style="color:;">&#10095;</div>
+          </div>
+          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+            style="width:100%"> <span id="dot" class="dot1" onclick="currentDiv(1)">
+              <!-- <span class="ball1"></span> <span id="dot" class="ball11"></span> -->
+            </span> <span id="dot" class="dot2" onclick="currentDiv(2)"></span>
+            <!-- <span class="ball2"></span> <span class="ball12"></span> --> <span id="dot" class="dot3"
+              onclick="currentDiv(3)"></span> <!-- <span class="ball3"></span>
+              <span class="ball13"></span> --> </div>
+          <!-- </div> -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="VertSeparator"></div>
+
+  <br>
+  <br>
+  <br>
+  <center class="heading"> Explore All Vehicles</center>
+  <h6 class="heading2" style="text-align: center;">CARS & MINIVAN</h6>
+  <table border="0" width="100%">
+    <tr>
+      <td style="width: 25%">
+
+        <img id="corollahb1" class="carsSlider" src="img/corollahb1.png">
+        <img id="corollahb2" class="carsSlider" src="img/corollahb2.png">
+      </td>
+      <td style="width: 25%">
+        <img id="priusc1" class="carsSlider" src="img/priusc1.png">
+        <img id="priusc2" class="carsSlider" src="img/priusc2.png">
+      </td>
+      <td style="width: 25%">
+        <img id="prius1" class="carsSlider" src="img/prius1.png">
+        <img id="prius2" class="carsSlider" src="img/prius2.png">
+      </td>
+      <td style="width: 25%">
+        <img id="camry1" class="carsSlider" src="img/camry1.png">
+        <img id="camry2" class="carsSlider" src="img/camry2.png">
+      </td>
+    </tr>
+  </table>
+
+  <div class="VertSeparator"></div>
+  <center class="heading">What's happening in Toyota</center>
+  <br>
+
+  <div style="display: flex; justify-content: space-around; width: 80%; margin: 0 auto;">
+
+    <div class="">
+
+      <header class="w3-container">
+        <img src="img/America.jpg" style="width: 100%">
+      </header>
+
+      <div class="w3-container">
+
+        <p style="color: grey;font-weight: bold;">
+          EXPLORE</p>
+        <p style="font-size: 12px;">
+          From north to south, east to west, we're <br>
+          hundreds of thousands of team members <br>
+          <sup style="color: red;">24</sup> strong – all dedicated to helping you<br>
+          go places.
+        </p>
+      </div>
+
+    </div>
+    <div width="2.5%" class="vertseparator"></div>
+    <div class="">
+
+      <header class="w3-container">
+        <img src="img/audio-multimedia.jpg" style="width: 100%">
+      </header>
+
+      <div class="w3-container">
+        <p style="color: grey;font-weight: bold;">
+          Audio/Multimedia</p>
+        <p style="font-size: 12px;">
+          Entune <sup style="font-size: 6PX;">TM
+            <label style="color: red;font-size: 9px">29</label></sup>
+          and Entune <sup>TM</sup> 3.0 <sup style="color: red;">31 </sup> App Suite <br>
+          capable vehicles are being updated <br>
+          11/13/18 to no longer include Pandora®, <sup style="color: red;"> 28 </sup> <br>
+          OpenTable® <sup style="color: red;"> 27 </sup> and Facebook Places <br>
+          functionality. </p>
+      </div>
+
+
+    </div>
+    <div width="2.5%" class="vertseparator"></div>
+    <div class="">
+
+      <header class="w3-container">
+        <img src="img/ToyotaCare.jpg" style="width: 100%">
+      </header>
+
+      <div class="w3-container">
+        <p style="color: grey;font-weight: bold;">
+          ToyotaCare</p>
+        <p style="font-size: 12px;">
+          Entune <sup style="font-size: 6PX;">TM
+            <label style="color: red;font-size: 9px">29</label></sup>
+          and Entune <sup>TM</sup> 3.0 <sup style="color: red;">31 </sup> App Suite <br>
+          capable vehicles are being updated <br>
+          11/13/18 to no longer include Pandora®, <sup style="color: red;"> 28 </sup> <br>
+          OpenTable® <sup style="color: red;"> 27 </sup> and Facebook Places <br>
+          functionality. </p>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <div class="shopping-tools-heading">
+
+    <h1>Shopping Tools</h1>
+
+    <div class="shopping-tools">
+
+      <div class="shopping-tools-items">
+        <div class="shopping-tools-icons">
+          <div class="tcom-shopping-tool-icon">
+            <img src="https://www.toyota.com/content/dam/toyota/shopping-tools/TDR-BuildPrice-32.svg"
+              alt="Build &amp; Price" data-aa-action="aa-link" data-aa-link-text="Build &amp; Price">
+          </div>
+          <div class="tcom-shopping-tool-cta type">
+            <span data-aa-action="aa-link" data-aa-link-type="link" data-aa-link-text="Build &amp; Price"> Build &amp;
+              Price </span>
+          </div>
+        </div>
+
+        <div class="shopping-tools-icons">
+          <div class="tcom-shopping-tool-icon">
+            <img src="https://www.toyota.com/content/dam/toyota/shopping-tools/TDR-SearchInventory-32.svg"
+              alt="Build &amp; Price" data-aa-action="aa-link" data-aa-link-text="Build &amp; Price">
+          </div>
+          <div class="tcom-shopping-tool-cta type"> <span data-aa-action="aa-link" data-aa-link-type="link"
+              data-aa-link-text="Build &amp; Price"> Search Inventory </span>
+          </div>
+        </div>
+
+        <div class="shopping-tools-icons">
+          <div class="tcom-shopping-tool-icon">
+            <img src="https://www.toyota.com/content/dam/toyota/shopping-tools/TDR-LocalSpecials-32.svg"
+              alt="Build &amp; Price" data-aa-action="aa-link" data-aa-link-text="Build &amp; Price">
+          </div>
+          <div class="tcom-shopping-tool-cta type"> <span data-aa-action="aa-link" data-aa-link-type="link"
+              data-aa-link-text="Build &amp; Price"> Local Specials </span>
+          </div>
+        </div>
+
+        <div class="shopping-tools-icons">
+          <div class="tcom-shopping-tool-icon">
+            <img src="https://www.toyota.com/content/dam/toyota/shopping-tools/TDR-FindDealer-32.svg"
+              alt="Build &amp; Price" data-aa-action="aa-link" data-aa-link-text="Build &amp; Price">
+          </div>
+          <div class="tcom-shopping-tool-cta type"> <span data-aa-action="aa-link" data-aa-link-type="link"
+              data-aa-link-text="Build &amp; Price">Find A Dealer </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="top-dv">
+        <img style="width: 200px;"
+          src="https://www.toyota.com/content/dam/toyota/logos/ToyotaLogo_Olympics_Paralympics.svg" alt="" srcset="">
+      </div>
+      <div>
+        <p style="    font-size: 13px;
+        margin-top: 14px;
+        letter-spacing: -.3px;">
+          Proud Partner of Team USA
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: row; justify-content: center;;" >
+        <a style="margin: 0 1rem; color:black; font-weight: 700" href="">Contact Us</a>
+        |
+        <a style="margin: 0 1rem; color:black; font-weight: 700" href="">FAQs</a>
+        |
+        <a style="margin: 0 1rem; color:black; font-weight: 700" href="">Espanol</a>
+      </div>
+      <div style="text-align: center;">
+        <p  style="
+        font-size: 10px;
+        line-height: 18px;
+        margin-bottom: 24px;
+        padding: 0 10px;">
+          ©2023 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S. vehicles only.
+       <br>
+          The use of Olympic Marks, Terminology and Imagery is authorized by the U.S. Olympic & Paralympic Committee pursuant to Title 36 U.S. Code Section 220506.
+        </p>
+      </div>
+      
+      <div>
+        <a style="margin: 0 1rem; color:black;font-size: 12px;" href="">Privacy Notice</a>
+        |
+        <a style="margin: 0 1rem; color:black;font-size: 12px;" href="">Legal Terms</a>
+        |
+        <a style="margin: 0 1rem; color:black;font-size: 12px;" href="">Site Map</a>
+      </div>
+    </footer>
+
+
+</body>
+
+</html>
