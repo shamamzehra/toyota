@@ -1,0 +1,52 @@
+<DOCTYPE html 4>
+<html>
+<head>
+<title></title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+<script>
+   /* $(window).load(function() {
+        $('#slider').nivoSlider({
+            directionNavHide: false,
+            captionOpacity: 1,
+            prevText: '&lt;',
+            nextText: '&gt;'
+        });
+    });*/
+    <script>
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+            effect: 'random',
+            directionNavHide: false,
+            pauseOnHover: true,
+            captionOpacity: 1,
+            prevText: '<',
+            nextText: '>'
+        });
+    });
+</script>
+</script>
+</script>
+</head>
+ 
+<body>
+ <!-- Slider -->
+    <div class="slider-wrapper futurico-theme">
+        <div id="slider" class="nivoSlider">
+            <img src="img/slide1.png" alt="" title="#caption1">
+            <img src="img/slide2.png" alt="">
+            <img src="img/slide3.png" alt="" title="#caption3">
+            <img src="img/slide4.png" alt="">
+        </div>
+        <div id="caption1" class="nivo-html-caption">
+            <strong>New Project</strong> <span></span> <em>Some description here</em>.
+        </div>
+        <div id="caption3" class="nivo-html-caption">
+            <strong>Image 3</strong> <span></span> <em>Some description here</em>.
+        </div>
+    </div>
+</div>
+</body>
+</html>

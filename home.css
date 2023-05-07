@@ -1,0 +1,435 @@
+#dvheader{
+	
+	background-color: #F5F5F5;  
+	width: 100%;
+	position: static;
+	overflow: visible;
+	z-index: auto;
+	text-transform: none;
+	
+}
+#dvHeadAncors{
+	text-align:right;
+	font-family: tcomSans;Helvetica;
+	font-weight: bold;
+	font-size: 14px;
+	justify-content: end;
+	height: 30px;
+    align-items: center;
+	display: flex;
+	padding-right: 20px;
+
+
+}
+#dvHeadAncors a{
+	color: gray;
+	text-decoration: none;  justify-content: center;
+    align-items: center;
+
+}
+#icoSearch{
+color: gray;
+}
+.header2 {
+	display: flex;
+	padding: 0 50px;
+	height:70px;
+	background-color: #fff;
+}
+.logo{
+	vertical-align: middle;
+}
+.header2 div{
+	display: flex;
+	align-items: center;
+}
+
+.header2-button-div{
+	display: flex;
+	justify-content: end;
+	width: 100%;
+}
+
+.headbtn{
+		font-family:Helvetica; //tcomSans;
+		text-decoration: none;
+		padding: 26px 22px;
+		cursor: pointer;
+		font-weight: bold;
+		border: none;
+		outline: none;
+		background:transparent;
+		font-size: 15px;
+		box-sizing: border-box;
+		color: #4d4d4d;
+
+	}
+	#dvdropSelVehicles{
+		display: none;
+		width: 80%;
+		float: right;
+		height:80vh;
+		background: white;
+		//position: absolute;
+	}
+	#dvdropShopping
+	{
+		display: none;
+		width: 80%;
+		float: right;
+		height: 300px;
+		background: white;
+		//position: absolute;
+	}
+	label{
+	    font-weight: inherit;
+	        font-style: inherit;
+	        font-size: 100%;
+	        font-family: inherit
+	}
+	.locSpecialbtn{
+		font-family:Helvetica; //tcomSans;
+		text-decoration: none;
+		padding: 26px 22px;
+		cursor: pointer;
+		font-weight: bold;
+		border: none;
+		outline: none;
+		background-color: #c00;
+		color: #FFF;
+	
+		font-size: 15px;
+		box-sizing: border-box;
+	}
+	.locSpecialbtn:hover{
+		color: #fff;
+		background-color: darkred;
+		
+	}
+	.headbtn:hover{
+		color: red;
+	}
+.logo{
+	height:45px;
+	cursor: pointer;
+}
+#icoDrpDwm
+{
+	color: red;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+ width: 100%;
+  position: relative;
+  margin: auto;
+  height: 350px;
+}
+
+/* Hide the images by default */
+.mySlides1,.mySlides2, .mySlides3 {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: red;
+  //font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	//color: blue;
+  background-color: red;//rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+#dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: grey;
+  border-radius: 50%;
+  display:inline-block;
+  transition: background-color 0.6s ease;
+  //border-outline: blue;
+      vertical-align: middle;
+         position: relative;
+}
+
+
+
+.active, #dot:hover {
+  background-color: red;
+}
+
+/* Fading animation */
+#fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.btncenter{
+	cursor: pointer;
+	padding: 30px 10px;
+	color: #4d4d4d;
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+	background:transparent;
+	outline: none;
+	border:none;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	    
+}
+#dvCntrBtn{
+	letter-spacing: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	    flex-direction: column;
+	        padding-left: 0;
+}
+.separator{
+	height: 90px;
+	border-left: 8px solid #ddd;
+
+}
+
+.VertSeparator{
+width: 100%;
+background-color: #ddd;
+height: 1px;
+margin: 30px 0;
+}
+
+.vertseparator{
+	height: 300px;
+	border-left: 1px solid #ddd;
+	
+	align-items: center;
+	justify-content: center;
+}
+.w3-content{
+margin-top: 50px;
+}
+
+
+//.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+#img2,#img3{
+display:none;
+}
+.shopping-tools{
+	font-family: tcomMed,HelveticaNeueMedium,Helvetica Neue Medium,Arial,sans-serif;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.shopping-tools-heading h1{
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+}
+.shopping-tools-items{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	/* padding: 20px; */
+	align-items: center;
+max-width: 100%;
+margin: 0 auto;
+}
+.shopping-tools-items div{
+	margin: 0 4rem;
+}
+.tcom-shopping-tool-icon{
+	width: 50px;
+	height: 50px;
+}
+.tcom-shopping-tool-icon img{
+	width: 100%;
+	height: 100%;
+}
+.shopping-tools-icons{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100px;
+
+	font-size: 18px;
+	font-weight: 700;
+}
+/*.ball1{
+	background-color: blue;
+	border-radius: 50%;
+	width:15px;
+	height: 15px;
+	position: absolute;
+	margin-top: -3px;
+	margin-left: -10px;
+}
+.ball11,{
+	background-color: red;
+	border-radius: 50%;
+	height: 50px;
+ 	width: 50px;
+	position: absolute;
+
+	margin-left: -18px;
+}
+.ball2{
+	background-color: blue;
+	border-radius: 50%;
+	width:15px;
+	height: 15px;
+	position: absolute;
+	margin-top: -1px;
+	margin-top: 8px;
+	margin-left: -20px;
+}
+.ball12{
+background-color: grey;
+	border-radius: 50%;
+	height: 10px;
+ 	width: 10px;
+ 	position: absolute;
+ 	margin-top: 10px;
+ 	margin-left: -39.5px;
+}*/
+/*.ball3{
+	background-color: blue;
+	border-radius: 50%;
+	width:15px;
+	height: 15px;
+	position: absolute;
+	//margin-top:20px;
+	margin-top: -1px;
+	margin-top: 8px;
+	margin-left: -21px;
+}
+.ball13{
+	background-color: grey;
+	border-radius: 50%;
+	height: 10px;
+ 	width: 10px;
+	position: relative;
+	//margin-top:20px;
+	margin-top: 10px;
+	margin-left: -12px;
+}
+*/
+.heading{
+	font-family: tcomLight,HelvNeueLight,Helvetica Neue Light,Arial,sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+}
+.heading2{
+	font-family:sans-serif;
+	font-weight:bold;
+	color:grey;
+	cursor: pointer;
+}
+.heading2:hover{
+	color: black;
+
+}
+.carsSlider{
+	width: ;
+	height: 120px;
+	display: none;
+	    margin: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+
+}
+
+
+#priusc2{
+	//margin-right: 200px;
+	width: 80%;
+	height: 120px;
+}
+#camry1{
+	width: ;
+	height: 100px;
+}
+#camry2{
+	//width: 110%;
+	height: 120px;
+}
+#prius1{
+	width: 90%;
+	height: 130px;
+}
+/*#prius2{
+	width: 95%;
+	height: 120px;
+}*/
+
+
+a{
+	text-decoration: none;
+}
+.footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
